@@ -17,10 +17,15 @@ define temp_conv(x)
    t=(x-32)*5/9
    return t
 }
+define temp_conv1(x)
+{
+   t=(x+459.67)*5/9
+   return t
+}
 
-
+#testing
 # then use the function to do the calculation
 x=$tt
-print "Temperature in degrees Celcius is ",temp_conv(x),"\n"
+print "Temperature in degrees Celcius is ",temp_conv(x),"\n"," Temperature in Kelvin is ",temp_conv1(x),"\n"
 
 _EOF_
